@@ -1,6 +1,12 @@
 .Navigation {
 	margin-bottom: 25px;
 
+	.brand-name {
+		text-transform: uppercase;
+		padding: 0 1rem;
+		font-weight: bold;
+	}
+
 	.options {
 		.option {
 			padding: 10px 15px;

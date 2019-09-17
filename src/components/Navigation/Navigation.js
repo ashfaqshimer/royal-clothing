@@ -12,23 +12,19 @@ import './Navigation.scss';
 import { auth } from '../../utils/firebase';
 import CartIcon from '../CartIcon/CartIcon';
 import CartDropdown from '../CartDropdown/CartDropdown';
+import { ReactComponent as Logo } from '../../assets/crown.svg';
 
 const Navigation = ({ currentUser, showCart }) => {
 	return (
 		<Navbar className='Navigation' bg='light' expand='md'>
 			<Link to='/'>
-				<Navbar.Brand>Muscle Monster</Navbar.Brand>
+				<Navbar.Brand>
+					<Logo />
+					<span className='brand-name'>Royal Clothing</span>
+				</Navbar.Brand>
 			</Link>
 			<Navbar.Toggle aria-controls='basic-navbar-nav' />
 			<Navbar.Collapse id='basic-navbar-nav'>
-				<Form inline>
-					<FormControl
-						type='text'
-						placeholder='Search'
-						className='mr-sm-2'
-					/>
-					<Button variant='outline-success'>Search</Button>
-				</Form>
 				<Nav className='ml-auto options'>
 					<Link className='option nav-link' to='/shop'>
 						SHOP
