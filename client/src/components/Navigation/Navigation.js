@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import Navbar from 'react-bootstrap/Navbar';
-import Form from 'react-bootstrap/Form';
-import FormControl from 'react-bootstrap/FormControl';
-import Button from 'react-bootstrap/Button';
 import Nav from 'react-bootstrap/Nav';
 
 import './Navigation.scss';
