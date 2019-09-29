@@ -18,6 +18,10 @@ export const CollectionItemContainer = styled.div`
 			display: flex;
 		}
 	}
+	@media screen and (max-width: 768px) {
+		width: 40vw;
+		margin-bottom: 10px;
+	}
 `;
 
 export const BackgroundImage = styled.div`
